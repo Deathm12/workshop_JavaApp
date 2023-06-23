@@ -52,14 +52,14 @@ public class App extends GameApplication {
         });
     }
 
-    // @Override
-    // public void initUI() {
-    //     Text textPixels = new Text();
-    //     textPixels.setTranslateX(50); // x = 50
-    //     textPixels.setTranslateY(100); // y = 100
-    //     FXGL.getGameScene().addUINode(textPixels);
-    //     textPixels.textProperty().bind(FXGL.getWorldProperties().intProperty("pixelsMoved").asString());
-    // }
+    @Override
+    public void initUI() {
+        Text textPixels = new Text("Ceci est un text");
+        textPixels.setTranslateX(50);
+        textPixels.setTranslateY(100);
+        FXGL.getGameScene().addUINode(textPixels);
+        // textPixels.textProperty().bind(FXGL.getWorldProperties().intProperty("pixelsMoved").asString());
+    }
 
     // @Override
     // protected void initGameVars(Map<String, Object> vars) {
